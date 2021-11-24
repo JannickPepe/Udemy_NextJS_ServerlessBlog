@@ -16,7 +16,7 @@ const AuthorIntro = () =>
             <Media.Body>
             <h5 className="font-weight-bold mb-0">Hello Friends,</h5>
             <p className="welcome-text">
-            My name is Jannick Pedersen and I do paid Udeme courses here and there.
+            My name is Jannick Pedersen and I do paid Udemey courses here and there.
             </p>
             </Media.Body>
         </Media>

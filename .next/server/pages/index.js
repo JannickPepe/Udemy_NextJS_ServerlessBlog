@@ -1,363 +1,122 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 405;
-exports.ids = [405];
+exports.id = "pages/index";
+exports.ids = ["pages/index"];
 exports.modules = {
 
-/***/ 371:
+/***/ "./components/AuthorIntro.js":
+/*!***********************************!*\
+  !*** ./components/AuthorIntro.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ Home),
-  "getStaticProps": () => (/* binding */ getStaticProps)
-});
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(997);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(689);
-;// CONCATENATED MODULE: external "react-bootstrap"
-const external_react_bootstrap_namespaceObject = require("react-bootstrap");
-;// CONCATENATED MODULE: ./components/Navbar.js
-
-
-const BlogNavbar = ()=>{
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_namespaceObject.Navbar, {
-        className: "fj-navbar fj-nav-base",
-        bg: "transparent",
-        expand: "lg",
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Navbar.Brand, {
-                className: "fj-navbar-brand",
-                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                    href: "#",
-                    children: "Jannick Pedersen"
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Navbar.Toggle, {
-                "aria-controls": "basic-navbar-nav"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Navbar.Collapse, {
-                id: "basic-navbar-nav",
-                children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Nav, {
-                    className: "ml-auto",
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Nav.Link, {
-                        className: "fj-navbar-item fj-navbar-link",
-                        href: "/",
-                        children: "Home"
-                    })
-                })
-            })
-        ]
-    }));
-};
-/* harmony default export */ const Navbar = (BlogNavbar);
-
-;// CONCATENATED MODULE: ./components/PageLayout.js
-
-
-
-function PageLayout({ children , className  }) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_namespaceObject.Container, {
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(Navbar, {
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: `page-wrapper ${className}`,
-                children: children
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("footer", {
-                className: "page-footer",
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                            href: "#",
-                            children: "courses"
-                        }),
-                        ' | ',
-                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                            href: "#",
-                            children: "github"
-                        }),
-                        ' | ',
-                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                            href: "#",
-                            children: "facebook"
-                        })
-                    ]
-                })
-            })
-        ]
-    }));
-};
-
-;// CONCATENATED MODULE: ./components/AuthorIntro.js
-
-
-const AuthorIntro = ()=>/*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Row, {
-        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Col, {
-            md: "8",
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_namespaceObject.Media, {
-                className: "mb-4 admin-intro",
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Image, {
-                        roundedCircle: true,
-                        width: 64,
-                        height: 64,
-                        className: "mr-3",
-                        src: "https://avatars.githubusercontent.com/JannickPepe",
-                        alt: "Generic placeholder"
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_namespaceObject.Media.Body, {
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("h5", {
-                                className: "font-weight-bold mb-0",
-                                children: "Hello Friends,"
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                className: "welcome-text",
-                                children: "My name is Jannick Pedersen and I do paid Udemey courses here and there."
-                            })
-                        ]
-                    })
-                ]
-            })
-        })
-    })
-;
-/* harmony default export */ const components_AuthorIntro = (AuthorIntro);
-
-;// CONCATENATED MODULE: ./components/CardItem.js
-
-
-// have the title and subtitle as value
-const CardItem = ({ title , subtitle  })=>{
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_namespaceObject.Card, {
-        className: `fj-card`,
-        children: [
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "card-body-wrapper",
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_namespaceObject.Card.Header, {
-                        className: "d-flex flex-row",
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                src: 'https://via.placeholder.com/150',
-                                className: "rounded-circle mr-3",
-                                height: "50px",
-                                width: "50px",
-                                alt: "avatar"
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Card.Title, {
-                                        className: "font-weight-bold mb-1",
-                                        children: "Placeholder Author"
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Card.Text, {
-                                        className: "card-date",
-                                        children: "Placeholder Date"
-                                    })
-                                ]
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "view overlay",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Card.Img, {
-                            src: "https://via.placeholder.com/250",
-                            alt: "Card image cap"
-                        })
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_namespaceObject.Card.Body, {
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Card.Title, {
-                                className: "card-main-title",
-                                children: title
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Card.Text, {
-                                children: subtitle
-                            })
-                        ]
-                    })
-                ]
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                className: "card-button",
-                children: "Read More"
-            })
-        ]
-    }));
-};
-/* harmony default export */ const components_CardItem = (CardItem);
-
-;// CONCATENATED MODULE: ./components/CardListItem.js
-
-
-const CardListItem = ()=>{
-    return(/*#__PURE__*/ _jsxs(Card, {
-        className: `fj-card fj-card-list`,
-        children: [
-            /*#__PURE__*/ _jsxs("div", {
-                className: "card-body-wrapper",
-                children: [
-                    /*#__PURE__*/ _jsxs(Card.Header, {
-                        className: "d-flex flex-row",
-                        children: [
-                            /*#__PURE__*/ _jsx("img", {
-                                src: 'https://via.placeholder.com/150',
-                                className: "rounded-circle mr-3",
-                                height: "50px",
-                                width: "50px",
-                                alt: "avatar"
-                            }),
-                            /*#__PURE__*/ _jsxs("div", {
-                                children: [
-                                    /*#__PURE__*/ _jsx(Card.Title, {
-                                        className: "font-weight-bold mb-1",
-                                        children: "Placeholder Author"
-                                    }),
-                                    /*#__PURE__*/ _jsx(Card.Text, {
-                                        className: "card-date",
-                                        children: "Placeholder Date"
-                                    })
-                                ]
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ _jsxs(Card.Body, {
-                        children: [
-                            /*#__PURE__*/ _jsx(Card.Title, {
-                                className: "card-main-title",
-                                children: "Placeholder Title"
-                            }),
-                            /*#__PURE__*/ _jsx(Card.Text, {
-                                children: "Placehodler Subtitle"
-                            })
-                        ]
-                    })
-                ]
-            }),
-            /*#__PURE__*/ _jsx("a", {
-                href: "#",
-                className: "card-button",
-                children: "Read More"
-            })
-        ]
-    }));
-};
-/* harmony default export */ const components_CardListItem = ((/* unused pure expression or super */ null && (CardListItem)));
-
-;// CONCATENATED MODULE: external "@sanity/client"
-const client_namespaceObject = require("@sanity/client");
-var client_default = /*#__PURE__*/__webpack_require__.n(client_namespaceObject);
-;// CONCATENATED MODULE: ./lib/sanity.js
-
-// for access the env 
-const options = {
-    dataset: process.env.SANITY_DATASET_NAME,
-    projectId: process.env.SANITY_PROJECT_ID,
-    useCdn: "production" === 'production'
-};
-/* harmony default export */ const sanity = (client_default()(options));
-
-;// CONCATENATED MODULE: ./lib/api.js
-
-// define what we will like to fetch 
-const blogFields = `
-    title,
-    subtitle,
-    'slug': slug.current
-`;
-// when returning block results only show the array type blog with the specific values with blogfields
-async function getAllBlogs() {
-    const results = await sanity.fetch(`*[_type == "blog"]{${blogFields}}`);
-    return results;
-}
-
-;// CONCATENATED MODULE: ./pages/index.js
-
-
-
-
-
-
-
-
-// Iterate over the blogs and map the blog
-function Home({ blogs , randomNumber  }) {
-    console.log('Hello World');
-    (0,external_react_.useEffect)(()=>{
-        console.log(blogs);
-    });
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(PageLayout, {
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(components_AuthorIntro, {
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("hr", {
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                children: randomNumber
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Row, {
-                className: "mb-5",
-                children: blogs.map((blog)=>/*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_namespaceObject.Col, {
-                        md: "4",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(components_CardItem, {
-                            title: blog.title,
-                            subtitle: blog.subtitle
-                        })
-                    }, blog.slug)
-                )
-            })
-        ]
-    }));
-};
-// This function is called during the build (build-time)
-// Provides props to your page and It will create static page
-async function getStaticProps() {
-    const randomNumber = Math.random();
-    const blogs = await getAllBlogs();
-    return {
-        props: {
-            blogs,
-            randomNumber
-        }
-    };
-} // export async function getServerSideProps() {
- //   const randomNumber = Math.random();
- //   const blogs = await getAllBlogs();
- //   return {
- //     props: {
- //       blogs,
- //       randomNumber
- //     }
- //   }
- // }
- // Static Page
- // Faster, can be cached using CDN
- // Created at build time
- // When we making the request we are always receiving the same html document
- // Dynamic Page
- // Created at request time (we can fetch data on server)
- // Little bit slower, the time depends on data you are fetching
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ \"react-bootstrap\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst AuthorIntro = ()=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {\n        __source: {\n            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\AuthorIntro.js\",\n            lineNumber: 4,\n            columnNumber: 5\n        },\n        __self: undefined,\n        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {\n            md: \"8\",\n            __source: {\n                fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\AuthorIntro.js\",\n                lineNumber: 5,\n                columnNumber: 9\n            },\n            __self: undefined,\n            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Media, {\n                className: \"mb-4 admin-intro\",\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\AuthorIntro.js\",\n                    lineNumber: 7,\n                    columnNumber: 9\n                },\n                __self: undefined,\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Image, {\n                        roundedCircle: true,\n                        width: 64,\n                        height: 64,\n                        className: \"mr-3\",\n                        src: \"https://avatars.githubusercontent.com/JannickPepe\",\n                        alt: \"Generic placeholder\",\n                        __source: {\n                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\AuthorIntro.js\",\n                            lineNumber: 8,\n                            columnNumber: 13\n                        },\n                        __self: undefined\n                    }),\n                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Media.Body, {\n                        __source: {\n                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\AuthorIntro.js\",\n                            lineNumber: 16,\n                            columnNumber: 13\n                        },\n                        __self: undefined,\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"h5\", {\n                                className: \"font-weight-bold mb-0\",\n                                __source: {\n                                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\AuthorIntro.js\",\n                                    lineNumber: 17,\n                                    columnNumber: 13\n                                },\n                                __self: undefined,\n                                children: \"Hello Friends,\"\n                            }),\n                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"p\", {\n                                className: \"welcome-text\",\n                                __source: {\n                                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\AuthorIntro.js\",\n                                    lineNumber: 18,\n                                    columnNumber: 13\n                                },\n                                __self: undefined,\n                                children: \"My name is Jannick Pedersen and I do paid Udemey courses here and there.\"\n                            })\n                        ]\n                    })\n                ]\n            })\n        })\n    })\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AuthorIntro);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL0F1dGhvckludHJvLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUF3RDtBQUV4RCxLQUFLLENBQUNJLFdBQVcsNEVBQ1pKLGdEQUFHOzs7Ozs7O3VGQUNDQyxnREFBRztZQUFDSSxFQUFFLEVBQUMsQ0FBRzs7Ozs7Ozs0RkFFVkgsa0RBQUs7Z0JBQUNJLFNBQVMsRUFBQyxDQUFrQjs7Ozs7Ozs7eUZBQzlCSCxrREFBSzt3QkFDTkksYUFBYTt3QkFDYkMsS0FBSyxFQUFFLEVBQUU7d0JBQ1RDLE1BQU0sRUFBRSxFQUFFO3dCQUNWSCxTQUFTLEVBQUMsQ0FBTTt3QkFDaEJJLEdBQUcsRUFBQyxDQUFtRDt3QkFDdkRDLEdBQUcsRUFBQyxDQUFxQjs7Ozs7Ozs7MEZBRXhCVCx1REFBVTs7Ozs7Ozs7aUdBQ1ZXLENBQUU7Z0NBQUNQLFNBQVMsRUFBQyxDQUF1Qjs7Ozs7OzswQ0FBQyxDQUFjOztpR0FDbkRRLENBQUM7Z0NBQUNSLFNBQVMsRUFBQyxDQUFjOzs7Ozs7OzBDQUFDLENBRTVCOzs7Ozs7Ozs7QUFPWixpRUFBZUYsV0FBVyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdWRlbXlzZXJ2ZXJsZXNzYmxvZy8uL2NvbXBvbmVudHMvQXV0aG9ySW50cm8uanM/MGJkYyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBSb3csIENvbCwgTWVkaWEsIEltYWdlIH0gZnJvbSAncmVhY3QtYm9vdHN0cmFwJztcclxuXHJcbmNvbnN0IEF1dGhvckludHJvID0gKCkgPT5cclxuICAgIDxSb3c+XHJcbiAgICAgICAgPENvbCBtZD1cIjhcIj5cclxuICAgICAgICB7LyogQVVUSE9SIElOVFJPIFNUQVJUUyAqL31cclxuICAgICAgICA8TWVkaWEgY2xhc3NOYW1lPVwibWItNCBhZG1pbi1pbnRyb1wiPlxyXG4gICAgICAgICAgICA8SW1hZ2VcclxuICAgICAgICAgICAgcm91bmRlZENpcmNsZVxyXG4gICAgICAgICAgICB3aWR0aD17NjR9XHJcbiAgICAgICAgICAgIGhlaWdodD17NjR9XHJcbiAgICAgICAgICAgIGNsYXNzTmFtZT1cIm1yLTNcIlxyXG4gICAgICAgICAgICBzcmM9XCJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0phbm5pY2tQZXBlXCJcclxuICAgICAgICAgICAgYWx0PVwiR2VuZXJpYyBwbGFjZWhvbGRlclwiXHJcbiAgICAgICAgICAgIC8+XHJcbiAgICAgICAgICAgIDxNZWRpYS5Cb2R5PlxyXG4gICAgICAgICAgICA8aDUgY2xhc3NOYW1lPVwiZm9udC13ZWlnaHQtYm9sZCBtYi0wXCI+SGVsbG8gRnJpZW5kcyw8L2g1PlxyXG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ3ZWxjb21lLXRleHRcIj5cclxuICAgICAgICAgICAgTXkgbmFtZSBpcyBKYW5uaWNrIFBlZGVyc2VuIGFuZCBJIGRvIHBhaWQgVWRlbWV5IGNvdXJzZXMgaGVyZSBhbmQgdGhlcmUuXHJcbiAgICAgICAgICAgIDwvcD5cclxuICAgICAgICAgICAgPC9NZWRpYS5Cb2R5PlxyXG4gICAgICAgIDwvTWVkaWE+XHJcbiAgICAgICAgey8qIEFVVEhPUiBJTlRSTyBFTkRTICovfVxyXG4gICAgICAgIDwvQ29sPlxyXG4gICAgPC9Sb3c+XHJcblxyXG5leHBvcnQgZGVmYXVsdCBBdXRob3JJbnRybzsiXSwibmFtZXMiOlsiUm93IiwiQ29sIiwiTWVkaWEiLCJJbWFnZSIsIkF1dGhvckludHJvIiwibWQiLCJjbGFzc05hbWUiLCJyb3VuZGVkQ2lyY2xlIiwid2lkdGgiLCJoZWlnaHQiLCJzcmMiLCJhbHQiLCJCb2R5IiwiaDUiLCJwIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/AuthorIntro.js\n");
 
 /***/ }),
 
-/***/ 689:
+/***/ "./components/CardItem.js":
+/*!********************************!*\
+  !*** ./components/CardItem.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ \"react-bootstrap\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);\n\n\n// have the title and subtitle as value\nconst CardItem = ({ title , subtitle , image , date , author  })=>{\n    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card, {\n        className: `fj-card`,\n        __source: {\n            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n            lineNumber: 6,\n            columnNumber: 9\n        },\n        __self: undefined,\n        children: [\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(\"div\", {\n                className: \"card-body-wrapper\",\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                    lineNumber: 7,\n                    columnNumber: 9\n                },\n                __self: undefined,\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Header, {\n                        className: \"d-flex flex-row\",\n                        __source: {\n                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                            lineNumber: 8,\n                            columnNumber: 13\n                        },\n                        __self: undefined,\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"img\", {\n                                src: (author === null || author === void 0 ? void 0 : author.avatar) || 'https://via.placeholder.com/150',\n                                className: \"rounded-circle mr-3\",\n                                height: \"50px\",\n                                width: \"50px\",\n                                alt: \"avatar\",\n                                __source: {\n                                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                                    lineNumber: 10,\n                                    columnNumber: 13\n                                },\n                                __self: undefined\n                            }),\n                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(\"div\", {\n                                __source: {\n                                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                                    lineNumber: 16,\n                                    columnNumber: 13\n                                },\n                                __self: undefined,\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Title, {\n                                        className: \"font-weight-bold mb-1\",\n                                        __source: {\n                                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                                            lineNumber: 17,\n                                            columnNumber: 17\n                                        },\n                                        __self: undefined,\n                                        children: author === null || author === void 0 ? void 0 : author.name\n                                    }),\n                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Text, {\n                                        className: \"card-date\",\n                                        __source: {\n                                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                                            lineNumber: 18,\n                                            columnNumber: 17\n                                        },\n                                        __self: undefined,\n                                        children: date\n                                    })\n                                ]\n                            })\n                        ]\n                    }),\n                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"div\", {\n                        className: \"view overlay\",\n                        __source: {\n                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                            lineNumber: 21,\n                            columnNumber: 13\n                        },\n                        __self: undefined,\n                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Img, {\n                            src: image,\n                            alt: \"Card image cap\",\n                            __source: {\n                                fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                                lineNumber: 22,\n                                columnNumber: 13\n                            },\n                            __self: undefined\n                        })\n                    }),\n                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Body, {\n                        __source: {\n                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                            lineNumber: 27,\n                            columnNumber: 13\n                        },\n                        __self: undefined,\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Title, {\n                                className: \"card-main-title\",\n                                __source: {\n                                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                                    lineNumber: 28,\n                                    columnNumber: 17\n                                },\n                                __self: undefined,\n                                children: title\n                            }),\n                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Text, {\n                                __source: {\n                                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                                    lineNumber: 29,\n                                    columnNumber: 17\n                                },\n                                __self: undefined,\n                                children: subtitle\n                            })\n                        ]\n                    })\n                ]\n            }),\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"a\", {\n                className: \"card-button\",\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardItem.js\",\n                    lineNumber: 32,\n                    columnNumber: 9\n                },\n                __self: undefined,\n                children: \"Read More\"\n            })\n        ]\n    }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CardItem);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL0NhcmRJdGVtLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFzQztBQUV0QyxFQUF1QztBQUN2QyxLQUFLLENBQUNDLFFBQVEsSUFBSSxDQUFDQyxDQUFBQSxLQUFLLEdBQUVDLFFBQVEsR0FBRUMsS0FBSyxHQUFFQyxJQUFJLEdBQUVDLE1BQU0sR0FBQyxHQUFLLENBQUM7SUFDMUQsTUFBTSx1RUFDRE4saURBQUk7UUFBQ08sU0FBUyxHQUFHLE9BQU87Ozs7Ozs7O2tGQUN4QkMsQ0FBRztnQkFBQ0QsU0FBUyxFQUFDLENBQW1COzs7Ozs7OzswRkFDN0JQLHdEQUFXO3dCQUNaTyxTQUFTLEVBQUMsQ0FBaUI7Ozs7Ozs7O2lHQUMxQkcsQ0FBRztnQ0FDQUMsR0FBRyxHQUFFTCxNQUFNLGFBQU5BLE1BQU0sS0FBTkEsSUFBSSxDQUFKQSxDQUFjLEdBQWRBLElBQUksQ0FBSkEsQ0FBYyxHQUFkQSxNQUFNLENBQUVNLE1BQU0sS0FBSSxDQUFpQztnQ0FDeERMLFNBQVMsRUFBQyxDQUFxQjtnQ0FDL0JNLE1BQU0sRUFBQyxDQUFNO2dDQUNiQyxLQUFLLEVBQUMsQ0FBTTtnQ0FDWkMsR0FBRyxFQUFDLENBQVE7Ozs7Ozs7O2tHQUNmUCxDQUFHOzs7Ozs7Ozt5R0FDQ1IsdURBQVU7d0NBQUNPLFNBQVMsRUFBQyxDQUF1Qjs7Ozs7OztrREFBRUQsTUFBTSxhQUFOQSxNQUFNLEtBQU5BLElBQUksQ0FBSkEsQ0FBWSxHQUFaQSxJQUFJLENBQUpBLENBQVksR0FBWkEsTUFBTSxDQUFFVyxJQUFJOzt5R0FDMURqQixzREFBUzt3Q0FBQ08sU0FBUyxFQUFDLENBQVc7Ozs7Ozs7a0RBQUVGLElBQUk7Ozs7Ozt5RkFHekNHLENBQUc7d0JBQUNELFNBQVMsRUFBQyxDQUFjOzs7Ozs7O3VHQUM1QlAscURBQVE7NEJBQ0xXLEdBQUcsRUFBRVAsS0FBSzs0QkFDVlcsR0FBRyxFQUFDLENBQWdCOzs7Ozs7Ozs7MEZBR3ZCZixzREFBUzs7Ozs7Ozs7aUdBQ0xBLHVEQUFVO2dDQUFDTyxTQUFTLEVBQUMsQ0FBaUI7Ozs7Ozs7MENBQUVMLEtBQUs7O2lHQUM3Q0Ysc0RBQVM7Ozs7Ozs7MENBQUVHLFFBQVE7Ozs7OztpRkFHM0JrQixDQUFDO2dCQUFDZCxTQUFTLEVBQUMsQ0FBYTs7Ozs7OzswQkFBQyxDQUUzQjs7OztBQUdSLENBQUM7QUFFRCxpRUFBZU4sUUFBUSxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdWRlbXlzZXJ2ZXJsZXNzYmxvZy8uL2NvbXBvbmVudHMvQ2FyZEl0ZW0uanM/Y2Y2NyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDYXJkIH0gZnJvbSAncmVhY3QtYm9vdHN0cmFwJztcclxuXHJcbi8vIGhhdmUgdGhlIHRpdGxlIGFuZCBzdWJ0aXRsZSBhcyB2YWx1ZVxyXG5jb25zdCBDYXJkSXRlbSA9ICh7dGl0bGUsIHN1YnRpdGxlLCBpbWFnZSwgZGF0ZSwgYXV0aG9yfSkgPT4ge1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8Q2FyZCBjbGFzc05hbWU9e2Bmai1jYXJkYH0+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjYXJkLWJvZHktd3JhcHBlclwiPlxyXG4gICAgICAgICAgICA8Q2FyZC5IZWFkZXJcclxuICAgICAgICAgICAgY2xhc3NOYW1lPVwiZC1mbGV4IGZsZXgtcm93XCI+XHJcbiAgICAgICAgICAgIDxpbWdcclxuICAgICAgICAgICAgICAgIHNyYz17YXV0aG9yPy5hdmF0YXIgfHwgJ2h0dHBzOi8vdmlhLnBsYWNlaG9sZGVyLmNvbS8xNTAnfVxyXG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwicm91bmRlZC1jaXJjbGUgbXItM1wiXHJcbiAgICAgICAgICAgICAgICBoZWlnaHQ9XCI1MHB4XCJcclxuICAgICAgICAgICAgICAgIHdpZHRoPVwiNTBweFwiXHJcbiAgICAgICAgICAgICAgICBhbHQ9XCJhdmF0YXJcIi8+XHJcbiAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgICA8Q2FyZC5UaXRsZSBjbGFzc05hbWU9XCJmb250LXdlaWdodC1ib2xkIG1iLTFcIj57YXV0aG9yPy5uYW1lfTwvQ2FyZC5UaXRsZT5cclxuICAgICAgICAgICAgICAgIDxDYXJkLlRleHQgY2xhc3NOYW1lPVwiY2FyZC1kYXRlXCI+e2RhdGV9PC9DYXJkLlRleHQ+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8L0NhcmQuSGVhZGVyPlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInZpZXcgb3ZlcmxheVwiPlxyXG4gICAgICAgICAgICA8Q2FyZC5JbWdcclxuICAgICAgICAgICAgICAgIHNyYz17aW1hZ2V9XHJcbiAgICAgICAgICAgICAgICBhbHQ9XCJDYXJkIGltYWdlIGNhcFwiXHJcbiAgICAgICAgICAgIC8+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8Q2FyZC5Cb2R5PlxyXG4gICAgICAgICAgICAgICAgPENhcmQuVGl0bGUgY2xhc3NOYW1lPVwiY2FyZC1tYWluLXRpdGxlXCI+e3RpdGxlfTwvQ2FyZC5UaXRsZT5cclxuICAgICAgICAgICAgICAgIDxDYXJkLlRleHQ+e3N1YnRpdGxlfTwvQ2FyZC5UZXh0PlxyXG4gICAgICAgICAgICA8L0NhcmQuQm9keT5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8YSBjbGFzc05hbWU9XCJjYXJkLWJ1dHRvblwiPlxyXG4gICAgICAgICAgICBSZWFkIE1vcmVcclxuICAgICAgICA8L2E+XHJcbiAgICAgICAgPC9DYXJkPlxyXG4gICAgKVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBDYXJkSXRlbTsiXSwibmFtZXMiOlsiQ2FyZCIsIkNhcmRJdGVtIiwidGl0bGUiLCJzdWJ0aXRsZSIsImltYWdlIiwiZGF0ZSIsImF1dGhvciIsImNsYXNzTmFtZSIsImRpdiIsIkhlYWRlciIsImltZyIsInNyYyIsImF2YXRhciIsImhlaWdodCIsIndpZHRoIiwiYWx0IiwiVGl0bGUiLCJuYW1lIiwiVGV4dCIsIkltZyIsIkJvZHkiLCJhIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/CardItem.js\n");
+
+/***/ }),
+
+/***/ "./components/CardListItem.js":
+/*!************************************!*\
+  !*** ./components/CardListItem.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ \"react-bootstrap\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst CardListItem = ()=>{\n    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card, {\n        className: `fj-card fj-card-list`,\n        __source: {\n            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n            lineNumber: 5,\n            columnNumber: 9\n        },\n        __self: undefined,\n        children: [\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(\"div\", {\n                className: \"card-body-wrapper\",\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n                    lineNumber: 6,\n                    columnNumber: 9\n                },\n                __self: undefined,\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Header, {\n                        className: \"d-flex flex-row\",\n                        __source: {\n                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n                            lineNumber: 7,\n                            columnNumber: 13\n                        },\n                        __self: undefined,\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"img\", {\n                                src: 'https://via.placeholder.com/150',\n                                className: \"rounded-circle mr-3\",\n                                height: \"50px\",\n                                width: \"50px\",\n                                alt: \"avatar\",\n                                __source: {\n                                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n                                    lineNumber: 9,\n                                    columnNumber: 13\n                                },\n                                __self: undefined\n                            }),\n                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(\"div\", {\n                                __source: {\n                                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n                                    lineNumber: 15,\n                                    columnNumber: 17\n                                },\n                                __self: undefined,\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Title, {\n                                        className: \"font-weight-bold mb-1\",\n                                        __source: {\n                                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n                                            lineNumber: 16,\n                                            columnNumber: 17\n                                        },\n                                        __self: undefined,\n                                        children: \"Placeholder Author\"\n                                    }),\n                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Text, {\n                                        className: \"card-date\",\n                                        __source: {\n                                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n                                            lineNumber: 17,\n                                            columnNumber: 17\n                                        },\n                                        __self: undefined,\n                                        children: \"Placeholder Date\"\n                                    })\n                                ]\n                            })\n                        ]\n                    }),\n                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Body, {\n                        __source: {\n                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n                            lineNumber: 20,\n                            columnNumber: 13\n                        },\n                        __self: undefined,\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Title, {\n                                className: \"card-main-title\",\n                                __source: {\n                                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n                                    lineNumber: 21,\n                                    columnNumber: 13\n                                },\n                                __self: undefined,\n                                children: \"Placeholder Title\"\n                            }),\n                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Card.Text, {\n                                __source: {\n                                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n                                    lineNumber: 22,\n                                    columnNumber: 13\n                                },\n                                __self: undefined,\n                                children: \"Placehodler Subtitle\"\n                            })\n                        ]\n                    })\n                ]\n            }),\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"a\", {\n                href: \"#\",\n                className: \"card-button\",\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\CardListItem.js\",\n                    lineNumber: 25,\n                    columnNumber: 9\n                },\n                __self: undefined,\n                children: \"Read More\"\n            })\n        ]\n    }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CardListItem);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL0NhcmRMaXN0SXRlbS5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBc0M7QUFFdEMsS0FBSyxDQUFDQyxZQUFZLE9BQVMsQ0FBQztJQUN4QixNQUFNLHVFQUNERCxpREFBSTtRQUFDRSxTQUFTLEdBQUcsb0JBQW9COzs7Ozs7OztrRkFDckNDLENBQUc7Z0JBQUNELFNBQVMsRUFBQyxDQUFtQjs7Ozs7Ozs7MEZBQzdCRix3REFBVzt3QkFDWkUsU0FBUyxFQUFDLENBQWlCOzs7Ozs7OztpR0FDMUJHLENBQUc7Z0NBQ0FDLEdBQUcsRUFBRSxDQUFpQztnQ0FDdENKLFNBQVMsRUFBQyxDQUFxQjtnQ0FDL0JLLE1BQU0sRUFBQyxDQUFNO2dDQUNiQyxLQUFLLEVBQUMsQ0FBTTtnQ0FDWkMsR0FBRyxFQUFDLENBQVE7Ozs7Ozs7O2tHQUNYTixDQUFHOzs7Ozs7Ozt5R0FDSEgsdURBQVU7d0NBQUNFLFNBQVMsRUFBQyxDQUF1Qjs7Ozs7OztrREFBQyxDQUFrQjs7eUdBQy9ERixzREFBUzt3Q0FBQ0UsU0FBUyxFQUFDLENBQVc7Ozs7Ozs7a0RBQUMsQ0FBZ0I7Ozs7OzswRkFHcERGLHNEQUFTOzs7Ozs7OztpR0FDVEEsdURBQVU7Z0NBQUNFLFNBQVMsRUFBQyxDQUFpQjs7Ozs7OzswQ0FBQyxDQUFpQjs7aUdBQ3hERixzREFBUzs7Ozs7OzswQ0FBQyxDQUFvQjs7Ozs7O2lGQUdsQ2EsQ0FBQztnQkFBQ0MsSUFBSSxFQUFDLENBQUc7Z0JBQUNaLFNBQVMsRUFBQyxDQUFhOzs7Ozs7OzBCQUFDLENBRXBDOzs7O0FBR1IsQ0FBQztBQUVELGlFQUFlRCxZQUFZLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly91ZGVteXNlcnZlcmxlc3NibG9nLy4vY29tcG9uZW50cy9DYXJkTGlzdEl0ZW0uanM/MTQ3MCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDYXJkIH0gZnJvbSAncmVhY3QtYm9vdHN0cmFwJztcclxuXHJcbmNvbnN0IENhcmRMaXN0SXRlbSA9ICgpID0+IHtcclxuICAgIHJldHVybiAoXHJcbiAgICAgICAgPENhcmQgY2xhc3NOYW1lPXtgZmotY2FyZCBmai1jYXJkLWxpc3RgfT5cclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNhcmQtYm9keS13cmFwcGVyXCI+XHJcbiAgICAgICAgICAgIDxDYXJkLkhlYWRlclxyXG4gICAgICAgICAgICBjbGFzc05hbWU9XCJkLWZsZXggZmxleC1yb3dcIj5cclxuICAgICAgICAgICAgPGltZ1xyXG4gICAgICAgICAgICAgICAgc3JjPXsnaHR0cHM6Ly92aWEucGxhY2Vob2xkZXIuY29tLzE1MCd9XHJcbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJyb3VuZGVkLWNpcmNsZSBtci0zXCJcclxuICAgICAgICAgICAgICAgIGhlaWdodD1cIjUwcHhcIlxyXG4gICAgICAgICAgICAgICAgd2lkdGg9XCI1MHB4XCJcclxuICAgICAgICAgICAgICAgIGFsdD1cImF2YXRhclwiLz5cclxuICAgICAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgICA8Q2FyZC5UaXRsZSBjbGFzc05hbWU9XCJmb250LXdlaWdodC1ib2xkIG1iLTFcIj5QbGFjZWhvbGRlciBBdXRob3I8L0NhcmQuVGl0bGU+XHJcbiAgICAgICAgICAgICAgICA8Q2FyZC5UZXh0IGNsYXNzTmFtZT1cImNhcmQtZGF0ZVwiPlBsYWNlaG9sZGVyIERhdGU8L0NhcmQuVGV4dD5cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8L0NhcmQuSGVhZGVyPlxyXG4gICAgICAgICAgICA8Q2FyZC5Cb2R5PlxyXG4gICAgICAgICAgICA8Q2FyZC5UaXRsZSBjbGFzc05hbWU9XCJjYXJkLW1haW4tdGl0bGVcIj5QbGFjZWhvbGRlciBUaXRsZTwvQ2FyZC5UaXRsZT5cclxuICAgICAgICAgICAgPENhcmQuVGV4dD5QbGFjZWhvZGxlciBTdWJ0aXRsZTwvQ2FyZC5UZXh0PlxyXG4gICAgICAgICAgICA8L0NhcmQuQm9keT5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8YSBocmVmPVwiI1wiIGNsYXNzTmFtZT1cImNhcmQtYnV0dG9uXCI+XHJcbiAgICAgICAgICAgIFJlYWQgTW9yZVxyXG4gICAgICAgIDwvYT5cclxuICAgICAgICA8L0NhcmQ+XHJcbiAgICApXHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IENhcmRMaXN0SXRlbTsiXSwibmFtZXMiOlsiQ2FyZCIsIkNhcmRMaXN0SXRlbSIsImNsYXNzTmFtZSIsImRpdiIsIkhlYWRlciIsImltZyIsInNyYyIsImhlaWdodCIsIndpZHRoIiwiYWx0IiwiVGl0bGUiLCJUZXh0IiwiQm9keSIsImEiLCJocmVmIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/CardListItem.js\n");
+
+/***/ }),
+
+/***/ "./components/Navbar.js":
+/*!******************************!*\
+  !*** ./components/Navbar.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ \"react-bootstrap\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst BlogNavbar = ()=>{\n    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Navbar, {\n        className: \"fj-navbar fj-nav-base\",\n        bg: \"transparent\",\n        expand: \"lg\",\n        __source: {\n            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\Navbar.js\",\n            lineNumber: 5,\n            columnNumber: 9\n        },\n        __self: undefined,\n        children: [\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Navbar.Brand, {\n                className: \"fj-navbar-brand\",\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\Navbar.js\",\n                    lineNumber: 9,\n                    columnNumber: 9\n                },\n                __self: undefined,\n                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"a\", {\n                    href: \"#\",\n                    __source: {\n                        fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\Navbar.js\",\n                        lineNumber: 10,\n                        columnNumber: 13\n                    },\n                    __self: undefined,\n                    children: \"Jannick Pedersen\"\n                })\n            }),\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Navbar.Toggle, {\n                \"aria-controls\": \"basic-navbar-nav\",\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\Navbar.js\",\n                    lineNumber: 12,\n                    columnNumber: 9\n                },\n                __self: undefined\n            }),\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Navbar.Collapse, {\n                id: \"basic-navbar-nav\",\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\Navbar.js\",\n                    lineNumber: 13,\n                    columnNumber: 9\n                },\n                __self: undefined,\n                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Nav, {\n                    className: \"ml-auto\",\n                    __source: {\n                        fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\Navbar.js\",\n                        lineNumber: 14,\n                        columnNumber: 13\n                    },\n                    __self: undefined,\n                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Nav.Link, {\n                        className: \"fj-navbar-item fj-navbar-link\",\n                        href: \"/\",\n                        __source: {\n                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\Navbar.js\",\n                            lineNumber: 15,\n                            columnNumber: 13\n                        },\n                        __self: undefined,\n                        children: \"Home\"\n                    })\n                })\n            })\n        ]\n    }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogNavbar);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL05hdmJhci5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBNkM7QUFFN0MsS0FBSyxDQUFDRSxVQUFVLE9BQVMsQ0FBQztJQUN0QixNQUFNLHVFQUNERixtREFBTTtRQUNQRyxTQUFTLEVBQUMsQ0FBdUI7UUFDakNDLEVBQUUsRUFBQyxDQUFhO1FBQ2hCQyxNQUFNLEVBQUMsQ0FBSTs7Ozs7Ozs7aUZBQ1ZMLHlEQUFZO2dCQUFDRyxTQUFTLEVBQUMsQ0FBaUI7Ozs7Ozs7K0ZBQ3BDSSxDQUFDO29CQUFDQyxJQUFJLEVBQUMsQ0FBRzs7Ozs7Ozs4QkFBQyxDQUFnQjs7O2lGQUUvQlIsMERBQWE7Z0JBQUNVLENBQWEsZ0JBQUMsQ0FBa0I7Ozs7Ozs7O2lGQUM5Q1YsNERBQWU7Z0JBQUNZLEVBQUUsRUFBQyxDQUFrQjs7Ozs7OzsrRkFDakNYLGdEQUFHO29CQUFDRSxTQUFTLEVBQUMsQ0FBUzs7Ozs7OzttR0FDdkJGLHFEQUFRO3dCQUNMRSxTQUFTLEVBQUMsQ0FBK0I7d0JBQ3pDSyxJQUFJLEVBQUMsQ0FBRzs7Ozs7OztrQ0FBQyxDQUNiOzs7Ozs7QUFLWixDQUFDO0FBRUQsaUVBQWVOLFVBQVUsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3VkZW15c2VydmVybGVzc2Jsb2cvLi9jb21wb25lbnRzL05hdmJhci5qcz9mYmNhIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5hdmJhciwgTmF2IH0gZnJvbSAncmVhY3QtYm9vdHN0cmFwJztcclxuXHJcbmNvbnN0IEJsb2dOYXZiYXIgPSAoKSA9PiB7XHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxOYXZiYXJcclxuICAgICAgICBjbGFzc05hbWU9XCJmai1uYXZiYXIgZmotbmF2LWJhc2VcIlxyXG4gICAgICAgIGJnPVwidHJhbnNwYXJlbnRcIlxyXG4gICAgICAgIGV4cGFuZD1cImxnXCIgPlxyXG4gICAgICAgIDxOYXZiYXIuQnJhbmQgY2xhc3NOYW1lPVwiZmotbmF2YmFyLWJyYW5kXCI+XHJcbiAgICAgICAgICAgIDxhIGhyZWY9XCIjXCI+SmFubmljayBQZWRlcnNlbjwvYT5cclxuICAgICAgICA8L05hdmJhci5CcmFuZD5cclxuICAgICAgICA8TmF2YmFyLlRvZ2dsZSBhcmlhLWNvbnRyb2xzPVwiYmFzaWMtbmF2YmFyLW5hdlwiIC8+XHJcbiAgICAgICAgPE5hdmJhci5Db2xsYXBzZSBpZD1cImJhc2ljLW5hdmJhci1uYXZcIj5cclxuICAgICAgICAgICAgPE5hdiBjbGFzc05hbWU9XCJtbC1hdXRvXCI+XHJcbiAgICAgICAgICAgIDxOYXYuTGlua1xyXG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiZmotbmF2YmFyLWl0ZW0gZmotbmF2YmFyLWxpbmtcIlxyXG4gICAgICAgICAgICAgICAgaHJlZj0nLyc+SG9tZVxyXG4gICAgICAgICAgICA8L05hdi5MaW5rPlxyXG4gICAgICAgICAgICA8L05hdj5cclxuICAgICAgICA8L05hdmJhci5Db2xsYXBzZT5cclxuICAgICAgICA8L05hdmJhcj5cclxuICAgIClcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgQmxvZ05hdmJhcjsiXSwibmFtZXMiOlsiTmF2YmFyIiwiTmF2IiwiQmxvZ05hdmJhciIsImNsYXNzTmFtZSIsImJnIiwiZXhwYW5kIiwiQnJhbmQiLCJhIiwiaHJlZiIsIlRvZ2dsZSIsImFyaWEtY29udHJvbHMiLCJDb2xsYXBzZSIsImlkIiwiTGluayJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/Navbar.js\n");
+
+/***/ }),
+
+/***/ "./components/PageLayout.js":
+/*!**********************************!*\
+  !*** ./components/PageLayout.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ PageLayout)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ \"react-bootstrap\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ \"./components/Navbar.js\");\n\n\n\nfunction PageLayout({ children , className  }) {\n    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {\n        __source: {\n            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\PageLayout.js\",\n            lineNumber: 6,\n            columnNumber: 9\n        },\n        __self: this,\n        children: [\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Navbar__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\PageLayout.js\",\n                    lineNumber: 7,\n                    columnNumber: 9\n                },\n                __self: this\n            }),\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"div\", {\n                className: `page-wrapper ${className}`,\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\PageLayout.js\",\n                    lineNumber: 8,\n                    columnNumber: 9\n                },\n                __self: this,\n                children: children\n            }),\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"footer\", {\n                className: \"page-footer\",\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\PageLayout.js\",\n                    lineNumber: 11,\n                    columnNumber: 9\n                },\n                __self: this,\n                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(\"div\", {\n                    __source: {\n                        fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\PageLayout.js\",\n                        lineNumber: 12,\n                        columnNumber: 13\n                    },\n                    __self: this,\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"a\", {\n                            href: \"#\",\n                            __source: {\n                                fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\PageLayout.js\",\n                                lineNumber: 13,\n                                columnNumber: 13\n                            },\n                            __self: this,\n                            children: \"courses\"\n                        }),\n                        ' | ',\n                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"a\", {\n                            href: \"#\",\n                            __source: {\n                                fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\PageLayout.js\",\n                                lineNumber: 14,\n                                columnNumber: 13\n                            },\n                            __self: this,\n                            children: \"github\"\n                        }),\n                        ' | ',\n                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"a\", {\n                            href: \"#\",\n                            __source: {\n                                fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\components\\\\PageLayout.js\",\n                                lineNumber: 15,\n                                columnNumber: 13\n                            },\n                            __self: this,\n                            children: \"facebook\"\n                        })\n                    ]\n                })\n            })\n        ]\n    }));\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL1BhZ2VMYXlvdXQuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUEyQztBQUNkO0FBRWQsUUFBUSxDQUFDRSxVQUFVLENBQUMsQ0FBQ0MsQ0FBQUEsUUFBUSxHQUFFQyxTQUFTLEdBQUMsRUFBRSxDQUFDO0lBQ3ZELE1BQU0sdUVBQ0RKLHNEQUFTOzs7Ozs7OztpRkFDVEMsK0NBQU07Ozs7Ozs7O2lGQUNOSSxDQUFHO2dCQUFDRCxTQUFTLEdBQUcsYUFBYSxFQUFFQSxTQUFTOzs7Ozs7OzBCQUNwQ0QsUUFBUTs7aUZBRVpHLENBQU07Z0JBQUNGLFNBQVMsRUFBQyxDQUFhOzs7Ozs7O2dHQUMxQkMsQ0FBRzs7Ozs7Ozs7NkZBQ0hFLENBQUM7NEJBQUNDLElBQUksRUFBQyxDQUFHOzs7Ozs7O3NDQUFDLENBQU87O3dCQUFLLENBQUs7NkZBQzVCRCxDQUFDOzRCQUFDQyxJQUFJLEVBQUMsQ0FBRzs7Ozs7OztzQ0FBQyxDQUFNOzt3QkFBSyxDQUFLOzZGQUMzQkQsQ0FBQzs0QkFBQ0MsSUFBSSxFQUFDLENBQUc7Ozs7Ozs7c0NBQUMsQ0FBUTs7Ozs7OztBQUtoQyxDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdWRlbXlzZXJ2ZXJsZXNzYmxvZy8uL2NvbXBvbmVudHMvUGFnZUxheW91dC5qcz9mOTMzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbnRhaW5lciB9IGZyb20gJ3JlYWN0LWJvb3RzdHJhcCc7XHJcbmltcG9ydCBOYXZiYXIgZnJvbSAnLi9OYXZiYXInO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gUGFnZUxheW91dCh7Y2hpbGRyZW4sIGNsYXNzTmFtZX0pIHtcclxuICAgIHJldHVybiAoXHJcbiAgICAgICAgPENvbnRhaW5lcj5cclxuICAgICAgICA8TmF2YmFyIC8+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9e2BwYWdlLXdyYXBwZXIgJHtjbGFzc05hbWV9YH0+XHJcbiAgICAgICAgICAgIHtjaGlsZHJlbn1cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8Zm9vdGVyIGNsYXNzTmFtZT1cInBhZ2UtZm9vdGVyXCI+XHJcbiAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgIDxhIGhyZWY9XCIjXCI+Y291cnNlczwvYT57JyB8ICd9XHJcbiAgICAgICAgICAgIDxhIGhyZWY9XCIjXCI+Z2l0aHViPC9hPnsnIHwgJ31cclxuICAgICAgICAgICAgPGEgaHJlZj1cIiNcIj5mYWNlYm9vazwvYT5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgPC9mb290ZXI+XHJcbiAgICAgICAgPC9Db250YWluZXI+XHJcbiAgICApXHJcbn0iXSwibmFtZXMiOlsiQ29udGFpbmVyIiwiTmF2YmFyIiwiUGFnZUxheW91dCIsImNoaWxkcmVuIiwiY2xhc3NOYW1lIiwiZGl2IiwiZm9vdGVyIiwiYSIsImhyZWYiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/PageLayout.js\n");
+
+/***/ }),
+
+/***/ "./lib/api.js":
+/*!********************!*\
+  !*** ./lib/api.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getAllBlogs\": () => (/* binding */ getAllBlogs)\n/* harmony export */ });\n/* harmony import */ var _sanity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sanity */ \"./lib/sanity.js\");\n\n// define what we will like to fetch \nconst blogFields = `\n    title,\n    subtitle,\n    'slug': slug.current,\n    date,\n    'author': author->{name, 'avatar': avatar.asset->url},\n    'coverImage': coverImage.asset->url\n`;\n// when returning block results only show the array type blog with the specific values with blogfields\nasync function getAllBlogs() {\n    const results = await _sanity__WEBPACK_IMPORTED_MODULE_0__[\"default\"].fetch(`*[_type == \"blog\"]{${blogFields}}`);\n    return results;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9saWIvYXBpLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQTZCO0FBRTdCLEVBQXFDO0FBQ3JDLEtBQUssQ0FBQ0MsVUFBVSxJQUFJO0FBU3BCLEVBQXNHO0FBQ3RHLE1BQU07SUFDRixLQUFLLENBQUNFLE9BQU8sR0FBRyxLQUFLO0lBRXJCO0FBQ0osQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3VkZW15c2VydmVybGVzc2Jsb2cvLi9saWIvYXBpLmpzPzQ1NDIiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGNsaWVudCBmcm9tICcuL3Nhbml0eSc7XHJcblxyXG4vLyBkZWZpbmUgd2hhdCB3ZSB3aWxsIGxpa2UgdG8gZmV0Y2ggXHJcbmNvbnN0IGJsb2dGaWVsZHMgPSBgXHJcbiAgICB0aXRsZSxcclxuICAgIHN1YnRpdGxlLFxyXG4gICAgJ3NsdWcnOiBzbHVnLmN1cnJlbnQsXHJcbiAgICBkYXRlLFxyXG4gICAgJ2F1dGhvcic6IGF1dGhvci0+e25hbWUsICdhdmF0YXInOiBhdmF0YXIuYXNzZXQtPnVybH0sXHJcbiAgICAnY292ZXJJbWFnZSc6IGNvdmVySW1hZ2UuYXNzZXQtPnVybFxyXG5gXHJcblxyXG4vLyB3aGVuIHJldHVybmluZyBibG9jayByZXN1bHRzIG9ubHkgc2hvdyB0aGUgYXJyYXkgdHlwZSBibG9nIHdpdGggdGhlIHNwZWNpZmljIHZhbHVlcyB3aXRoIGJsb2dmaWVsZHNcclxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldEFsbEJsb2dzKCkge1xyXG4gICAgY29uc3QgcmVzdWx0cyA9IGF3YWl0IGNsaWVudFxyXG4gICAgLmZldGNoKGAqW190eXBlID09IFwiYmxvZ1wiXXske2Jsb2dGaWVsZHN9fWApO1xyXG4gICAgcmV0dXJuIHJlc3VsdHM7XHJcbn0iXSwibmFtZXMiOlsiY2xpZW50IiwiYmxvZ0ZpZWxkcyIsImdldEFsbEJsb2dzIiwicmVzdWx0cyIsImZldGNoIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./lib/api.js\n");
+
+/***/ }),
+
+/***/ "./lib/sanity.js":
+/*!***********************!*\
+  !*** ./lib/sanity.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _sanity_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @sanity/client */ \"@sanity/client\");\n/* harmony import */ var _sanity_client__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sanity_client__WEBPACK_IMPORTED_MODULE_0__);\n\n// for access the env \nconst options = {\n    dataset: process.env.SANITY_DATASET_NAME,\n    projectId: process.env.SANITY_PROJECT_ID,\n    useCdn: \"development\" === 'production'\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_sanity_client__WEBPACK_IMPORTED_MODULE_0___default()(options));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9saWIvc2FuaXR5LmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7OztBQUF5QztBQUV6QyxFQUFzQjtBQUN0QixLQUFLLENBQUNDLE9BQU8sR0FBRyxDQUFDO0lBQ2JDLE9BQU8sRUFBRUMsT0FBTyxDQUFDQyxHQUFHLENBQUNDLG1CQUFtQjtJQUN4Q0MsU0FBUyxFQUFFSCxPQUFPLENBQUNDLEdBQUcsQ0FBQ0csaUJBQWlCO0lBQ3hDQyxNQUFNLEVBTlYsQ0FBYSxpQkFNd0IsQ0FBWTtBQUdqRCxDQUFDO0FBRUQsaUVBQWVSLHFEQUFZLENBQUNDLE9BQU8sQ0FBQyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdWRlbXlzZXJ2ZXJsZXNzYmxvZy8uL2xpYi9zYW5pdHkuanM/ZDhiYSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc2FuaXR5Q2xpZW50IGZyb20gJ0BzYW5pdHkvY2xpZW50JztcclxuXHJcbi8vIGZvciBhY2Nlc3MgdGhlIGVudiBcclxuY29uc3Qgb3B0aW9ucyA9IHtcclxuICAgIGRhdGFzZXQ6IHByb2Nlc3MuZW52LlNBTklUWV9EQVRBU0VUX05BTUUsXHJcbiAgICBwcm9qZWN0SWQ6IHByb2Nlc3MuZW52LlNBTklUWV9QUk9KRUNUX0lELFxyXG4gICAgdXNlQ2RuOiBwcm9jZXNzLmVudi5OT0RFX0VOViA9PT0gJ3Byb2R1Y3Rpb24nXHJcbiAgLy8gdXNlQ2RuID09PSB0cnVlLCBnaXZlcyB5b3UgZmFzdCByZXNwb25zZSwgaXQgd2lsbCBnZXQgeW91IGNhY2hlZCBkYXRhXHJcbiAgLy8gdXNlQ2RuID09PSBmYWxzZSwgZ2l2ZSB5b3UgbGl0dGxlIGJpdCBzbG93ZXIgcmVzcG9uc2UsIGJ1dCBsYXRlc3QgZGF0YVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBzYW5pdHlDbGllbnQob3B0aW9ucyk7Il0sIm5hbWVzIjpbInNhbml0eUNsaWVudCIsIm9wdGlvbnMiLCJkYXRhc2V0IiwicHJvY2VzcyIsImVudiIsIlNBTklUWV9EQVRBU0VUX05BTUUiLCJwcm9qZWN0SWQiLCJTQU5JVFlfUFJPSkVDVF9JRCIsInVzZUNkbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./lib/sanity.js\n");
+
+/***/ }),
+
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home),\n/* harmony export */   \"getStaticProps\": () => (/* binding */ getStaticProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ \"react-bootstrap\");\n/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_PageLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PageLayout */ \"./components/PageLayout.js\");\n/* harmony import */ var _components_AuthorIntro__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/AuthorIntro */ \"./components/AuthorIntro.js\");\n/* harmony import */ var _components_CardItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/CardItem */ \"./components/CardItem.js\");\n/* harmony import */ var _components_CardListItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/CardListItem */ \"./components/CardListItem.js\");\n/* harmony import */ var _lib_api__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/api */ \"./lib/api.js\");\n\n\n\n\n\n\n\n// Iterate over the blogs and map the blog\nfunction Home({ blogs  }) {\n    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_PageLayout__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n        __source: {\n            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\pages\\\\index.js\",\n            lineNumber: 14,\n            columnNumber: 5\n        },\n        __self: this,\n        children: [\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_AuthorIntro__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\pages\\\\index.js\",\n                    lineNumber: 15,\n                    columnNumber: 5\n                },\n                __self: this\n            }),\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"hr\", {\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\pages\\\\index.js\",\n                    lineNumber: 16,\n                    columnNumber: 5\n                },\n                __self: this\n            }),\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {\n                className: \"mb-5\",\n                __source: {\n                    fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\pages\\\\index.js\",\n                    lineNumber: 17,\n                    columnNumber: 5\n                },\n                __self: this,\n                children: blogs.map((blog)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {\n                        md: \"4\",\n                        __source: {\n                            fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\pages\\\\index.js\",\n                            lineNumber: 22,\n                            columnNumber: 11\n                        },\n                        __self: this,\n                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_CardItem__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n                            title: blog.title,\n                            subtitle: blog.subtitle,\n                            date: blog.date,\n                            image: blog.coverImage,\n                            __source: {\n                                fileName: \"C:\\\\Users\\\\janni\\\\source\\\\repos\\\\NextJS\\\\udemyserverlessblog\\\\pages\\\\index.js\",\n                                lineNumber: 23,\n                                columnNumber: 13\n                            },\n                            __self: this\n                        })\n                    }, blog.slug)\n                )\n            })\n        ]\n    }));\n};\nasync function getStaticProps() {\n    const randomNumber = Math.random();\n    const blogs = await (0,_lib_api__WEBPACK_IMPORTED_MODULE_6__.getAllBlogs)();\n    return {\n        props: {\n            blogs,\n            randomNumber\n        }\n    };\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7QUFFMEM7QUFDTztBQUNFO0FBQ047QUFDUTtBQUViO0FBRXhDLEVBQTBDO0FBQzNCLFFBQVEsQ0FBQ08sSUFBSSxDQUFDLENBQUNDLENBQUFBLEtBQUssR0FBQyxFQUFFLENBQUM7SUFDckMsTUFBTSx1RUFDSE4sOERBQVU7Ozs7Ozs7O2lGQUNWQywrREFBVzs7Ozs7Ozs7aUZBQ1hNLENBQUU7Ozs7Ozs7O2lGQUNGVCxnREFBRztnQkFBQ1UsU0FBUyxFQUFDLENBQU07Ozs7Ozs7MEJBSWpCRixLQUFLLENBQUNHLEdBQUcsRUFBQ0MsSUFBSSx3RUFDWFgsZ0RBQUc7d0JBQWlCWSxFQUFFLEVBQUMsQ0FBRzs7Ozs7Ozt1R0FDeEJULDREQUFROzRCQUNQVSxLQUFLLEVBQUVGLElBQUksQ0FBQ0UsS0FBSzs0QkFDakJDLFFBQVEsRUFBRUgsSUFBSSxDQUFDRyxRQUFROzRCQUN2QkMsSUFBSSxFQUFFSixJQUFJLENBQUNJLElBQUk7NEJBQ2ZDLEtBQUssRUFBRUwsSUFBSSxDQUFDTSxVQUFVOzs7Ozs7Ozt1QkFMaEJOLElBQUksQ0FBQ08sSUFBSTs7Ozs7QUFhN0IsQ0FBQztBQUdNLGVBQWVDLGNBQWMsR0FBRyxDQUFDO0lBQ3RDLEtBQUssQ0FBQ0MsWUFBWSxHQUFHQyxJQUFJLENBQUNDLE1BQU07SUFDaEMsS0FBSyxDQUFDZixLQUFLLEdBQUcsS0FBSyxDQUFDRixxREFBVztJQUMvQixNQUFNLENBQUMsQ0FBQztRQUNOa0IsS0FBSyxFQUFFLENBQUM7WUFDTmhCLEtBQUs7WUFDTGEsWUFBWTtRQUNkLENBQUM7SUFDSCxDQUFDO0FBQ0gsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3VkZW15c2VydmVybGVzc2Jsb2cvLi9wYWdlcy9pbmRleC5qcz9iZWU3Il0sInNvdXJjZXNDb250ZW50IjpbIlxuXG5pbXBvcnQgeyBSb3csIENvbCB9IGZyb20gJ3JlYWN0LWJvb3RzdHJhcCc7XG5pbXBvcnQgUGFnZUxheW91dCBmcm9tICcuLi9jb21wb25lbnRzL1BhZ2VMYXlvdXQnO1xuaW1wb3J0IEF1dGhvckludHJvIGZyb20gJy4uL2NvbXBvbmVudHMvQXV0aG9ySW50cm8nO1xuaW1wb3J0IENhcmRJdGVtIGZyb20gJy4uL2NvbXBvbmVudHMvQ2FyZEl0ZW0nO1xuaW1wb3J0IENhcmRMaXN0SXRlbSBmcm9tICcuLi9jb21wb25lbnRzL0NhcmRMaXN0SXRlbSc7XG5cbmltcG9ydCB7IGdldEFsbEJsb2dzIH0gZnJvbSAnLi4vbGliL2FwaSc7XG5cbi8vIEl0ZXJhdGUgb3ZlciB0aGUgYmxvZ3MgYW5kIG1hcCB0aGUgYmxvZ1xuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSh7YmxvZ3N9KSB7XG4gIHJldHVybiAoXG4gICAgPFBhZ2VMYXlvdXQ+XG4gICAgPEF1dGhvckludHJvIC8+XG4gICAgPGhyLz5cbiAgICA8Um93IGNsYXNzTmFtZT1cIm1iLTVcIj5cbiAgICAgIHsvKiA8Q29sIG1kPVwiMTBcIj5cbiAgICAgICAgPENhcmRMaXN0SXRlbSAvPlxuICAgICAgPC9Db2w+ICovfVxuICAgICAgeyBibG9ncy5tYXAoYmxvZyA9PlxuICAgICAgICAgIDxDb2wga2V5PXtibG9nLnNsdWd9IG1kPVwiNFwiPlxuICAgICAgICAgICAgPENhcmRJdGVtXG4gICAgICAgICAgICAgIHRpdGxlPXtibG9nLnRpdGxlfVxuICAgICAgICAgICAgICBzdWJ0aXRsZT17YmxvZy5zdWJ0aXRsZX1cbiAgICAgICAgICAgICAgZGF0ZT17YmxvZy5kYXRlfVxuICAgICAgICAgICAgICBpbWFnZT17YmxvZy5jb3ZlckltYWdlfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICA8L0NvbD5cbiAgICAgICAgICApXG4gICAgICAgIH1cbiAgICA8L1Jvdz5cbiAgPC9QYWdlTGF5b3V0PlxuICApXG59XG5cblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFN0YXRpY1Byb3BzKCkge1xuICBjb25zdCByYW5kb21OdW1iZXIgPSBNYXRoLnJhbmRvbSgpO1xuICBjb25zdCBibG9ncyA9IGF3YWl0IGdldEFsbEJsb2dzKCk7XG4gIHJldHVybiB7XG4gICAgcHJvcHM6IHtcbiAgICAgIGJsb2dzLFxuICAgICAgcmFuZG9tTnVtYmVyXG4gICAgfVxuICB9XG59XG4iXSwibmFtZXMiOlsiUm93IiwiQ29sIiwiUGFnZUxheW91dCIsIkF1dGhvckludHJvIiwiQ2FyZEl0ZW0iLCJDYXJkTGlzdEl0ZW0iLCJnZXRBbGxCbG9ncyIsIkhvbWUiLCJibG9ncyIsImhyIiwiY2xhc3NOYW1lIiwibWFwIiwiYmxvZyIsIm1kIiwidGl0bGUiLCJzdWJ0aXRsZSIsImRhdGUiLCJpbWFnZSIsImNvdmVySW1hZ2UiLCJzbHVnIiwiZ2V0U3RhdGljUHJvcHMiLCJyYW5kb21OdW1iZXIiLCJNYXRoIiwicmFuZG9tIiwicHJvcHMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/index.js\n");
+
+/***/ }),
+
+/***/ "@sanity/client":
+/*!*********************************!*\
+  !*** external "@sanity/client" ***!
+  \*********************************/
 /***/ ((module) => {
 
-module.exports = require("react");
+module.exports = require("@sanity/client");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react-bootstrap":
+/*!**********************************!*\
+  !*** external "react-bootstrap" ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = require("react-bootstrap");
+
+/***/ }),
+
+/***/ "react/jsx-runtime":
+/*!************************************!*\
+  !*** external "react/jsx-runtime" ***!
+  \************************************/
 /***/ ((module) => {
 
 module.exports = require("react/jsx-runtime");
@@ -371,7 +130,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(371));
+var __webpack_exports__ = (__webpack_exec__("./pages/index.js"));
 module.exports = __webpack_exports__;
 
 })();

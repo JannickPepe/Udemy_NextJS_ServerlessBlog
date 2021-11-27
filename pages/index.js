@@ -39,14 +39,12 @@ export default function Home({blogs}) {
   )
 }
 
-
+//
 export async function getStaticProps() {
-  const randomNumber = Math.random();
   const blogs = await getAllBlogs();
   return {
     props: {
-      blogs,
-      randomNumber
+      blogs
     }
   }
 }

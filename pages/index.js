@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import useSWR from 'swr';
+
 import { Row, Col } from 'react-bootstrap';
 import PageLayout from '../components/PageLayout';
 import AuthorIntro from '../components/AuthorIntro';
@@ -10,8 +10,7 @@ import FilteringMenu from '../components/FilteringMenu';
 
 import { getAllBlogs } from '../lib/api';
 
-// we create the fetcher function so the SWR function can be more usable
-const fetcher = url => fetch(url).then(res => res.json())
+import { useGetBlogs } from '../actions';
 
 // Iterate over the blogs and map the blog
 export default function Home({blogs}) {
@@ -19,9 +18,10 @@ export default function Home({blogs}) {
     view: { list: 0 }
   });
 
-  // create the useSWR function with the path string and fether function
-  const { data, error } = useSWR('../api/hello', fetcher);
-  debugger
+  const { data, error } = useGetBlogs();
+  if (data) {
+    alert(JSON.stringify(data));
+  }
 
   return (
     <PageLayout>

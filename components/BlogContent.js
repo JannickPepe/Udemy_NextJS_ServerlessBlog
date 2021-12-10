@@ -6,7 +6,7 @@ import { urlFor } from 'lib/api';
 // make the object serializers where we will define types with the code prop and return the variables
 const serializers = {
     types: {
-        // the code method will have the 3x given vaiables and it will be returned in the different props
+        // the code method will have the 3x given variables and it will be returned in the different props
         code: ({node: {language, code, filename}}) => {
             return (
             <HighlightCode language={language}>

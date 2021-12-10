@@ -9,19 +9,16 @@ import CardListItem from '../components/CardListItem';
 import FilteringMenu from '../components/FilteringMenu';
 
 import { getAllBlogs } from '../lib/api';
-
 import { useGetBlogs } from '../actions';
 
 // Iterate over the blogs and map the blog
-export default function Home({blogs}) {
+export default function Home({blogs: initialData}) {
   const [filter, setFilter] = useState({
     view: { list: 0 }
   });
 
-  const { data, error } = useGetBlogs();
-  if (data) {
-    alert(JSON.stringify(data));
-  }
+
+  const { data: blogs, error } = useGetBlogs(initialData);
 
   return (
     <PageLayout>
@@ -35,13 +32,11 @@ export default function Home({blogs}) {
       />
       <hr/>
       <Row className="mb-5">
-        {/* <Col md="10">
-          <CardListItem />
-        </Col> */}
+      
         { blogs.map(blog =>
           filter.view.list ?
             <Col key={`${blog.slug}-list`} md="9">
-            <CardListItem
+              <CardListItem
                 author={blog.author}
                 title={blog.title}
                 subtitle={blog.subtitle}
@@ -73,9 +68,8 @@ export default function Home({blogs}) {
   )
 }
 
-
 export async function getStaticProps() {
-  const blogs = await getAllBlogs();
+  const blogs = await getAllBlogs({offset: 6});
   return {
     props: {
       blogs

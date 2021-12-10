@@ -1,5 +1,8 @@
 
-// feth the array from the json
-export default function getBlogs(req, res) {
-    res.status(200).json([1,2,3,4,5])
+import { getAllBlogs } from '../../lib/api';
+
+// feth the array from the json after the res (response) status
+export default async function getBlogs(req, res) {
+    const data = await getAllBlogs();
+    res.status(200).json(data);
 }

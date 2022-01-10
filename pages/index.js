@@ -4,12 +4,13 @@ import { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import PageLayout from '../components/PageLayout';
 import AuthorIntro from '../components/AuthorIntro';
-import CardItem from '../components/CardItem';
-import CardListItem from '../components/CardListItem';
+import CardItem from 'components/CardItem';
+import CardListItem from 'components/CardListItem';
 import FilteringMenu from '../components/FilteringMenu';
 
 import { getAllBlogs } from '../lib/api';
-import { useGetBlogs } from '../actions';
+import { useGetBlogs } from 'actions';
+
 
 // Iterate over the blogs and map the blog
 export default function Home({blogs: initialData}) {
@@ -19,21 +20,18 @@ export default function Home({blogs: initialData}) {
 
 
   const { data: blogs, error } = useGetBlogs(initialData);
-
   return (
     <PageLayout>
       <AuthorIntro />
       <FilteringMenu
         filter={filter}
-        onChange={(option, value) => {
-          debugger
-          setFilter({...filter, [option]: value});
-        }}
+        onChange={(option, value) =>
+          setFilter({...filter, [option]: value})
+        }
       />
       <hr/>
       <Row className="mb-5">
-      
-        { blogs.map(blog =>
+      { blogs.map(blog =>
           filter.view.list ?
             <Col key={`${blog.slug}-list`} md="9">
               <CardListItem

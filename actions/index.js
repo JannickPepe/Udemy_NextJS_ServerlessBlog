@@ -8,11 +8,11 @@ const fetcher = url => fetch(url).then(res => res.json())
 export const useGetHello = () => useSWR('../api/hello', fetcher);
 
 // for the new useSWR
-// export const getBlogs = (url) => {
-//   return fetcher(url)};
+export const getBlogs = (url) => {
+  return fetcher(url)
+};
 
 export const useGetBlogs = (initialData) => {
-
     return useSWR(`../api/blogs`, fetcher, {
         fallbackData: initialData
     })

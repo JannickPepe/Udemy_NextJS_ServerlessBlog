@@ -52,13 +52,13 @@ const BlogDetail = ({blog, preview}) => {
 
 // asyncronous function have params values, the preview value and previewData. Then have the blog to await getBlogBySlog with any promise values and then return the property onto the object blog
 export async function getStaticProps({params, preview = false, previewData}) {
-    // Todo: pass preview to getBlogBySlug and fetch draft blog
 
-    const blog = await getBlogBySlug(params.slug);
+    const blog = await getBlogBySlug(params.slug, preview);
     return {
         props: {blog, preview}
     }
-}
+};
+
 
 //Introduce fallback
 // make the function getStaticPaths method where the values will be return 

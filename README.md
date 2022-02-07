@@ -1,6 +1,6 @@
 
 
-## Getting started !!
+## Getting started :) !!
 
 1. create `.env.local` file in root folder with values of:
 
